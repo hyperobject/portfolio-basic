@@ -1,0 +1,36 @@
+html, body {
+    background: #1e272e;
+    margin:0;
+    padding:0;
+    color: white;
+}
+
+h1 {
+    font-family: "Space Mono", monospace;
+    font-size: 3rem;
+    text-align: center;
+    padding: 5px 20px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    display: inline-block;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: "Spectral", serif;
+    font-size: 2.5rem;
+}
+
+.header {
+    width: 100%;
+    margin: 100px 0;
+    text-align: center;
+}
+.content {
+    border: 2px solid;
+    max-width: 60rem;
+    border-image: linear-gradient(to right, #ff512f, #dd2476) 1;
+    margin: auto;
+    padding: 15px;
+    height: 100%;
+    box-sizing: border-box;
+}
