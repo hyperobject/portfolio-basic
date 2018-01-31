@@ -5,6 +5,15 @@ html, body {
     color: white;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 h1 {
     font-family: "Space Mono", monospace;
     font-size: 3rem;
@@ -17,7 +26,44 @@ h1 {
 
 h2 {
     font-family: "Spectral", serif;
+    font-weight: 800;
+    font-style: italic;
     font-size: 2.5rem;
+}
+
+h3 {
+    display: inline-block;
+    margin: 20px 0;
+    font-family: "Space Mono", monospace;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px 20px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+h4.title {
+    margin: 0;
+    font-family: "Spectral", serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+h4.date {
+    margin: 0;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+p {
+    font-family: "Roboto", serif;
+    text-indent: 1rem;
+}
+
+p.description {
+    margin-bottom: 35px;
 }
 
 .header {
@@ -27,10 +73,17 @@ h2 {
 }
 .content {
     border: 2px solid;
+    border-bottom: none;
     max-width: 60rem;
     border-image: linear-gradient(to right, #ff512f, #dd2476) 1;
     margin: auto;
-    padding: 15px;
-    height: 100%;
+    padding: 15px 100px;
+    padding-bottom: 100px;
     box-sizing: border-box;
+}
+
+.sticky {
+    display: block;
+    position: sticky;
+    top: -21px;
 }
